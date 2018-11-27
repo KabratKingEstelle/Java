@@ -1,0 +1,55 @@
+##### Math 类全都是静态类方法，main也是静态类方法，从类中直接调用。
+
+WRONG
+public class Test{
+ public int factorial(int n){
+     int result = 1;
+     for (int i =1; i<=n;i++)
+         result *= i;
+     return result;
+   }
+}
+
+RIGHT
+WRONG
+public class Test{
+ public static int factorial(int n){
+     int result = 1;
+     for (int i =1; i<=n;i++)
+         result *= i;
+     return result;
+   }
+}
+
+Wrong 
+public class Foo{
+ int i = 5;
+ static int k = 2;
+ public static void main(String[] args){
+   int j = i;
+   m1();
+  }
+  public void m1(){
+    i = i+k+m2(i,k);
+   }
+  public static int m2(int i ,int j){
+    return (int)(Math.pow(i,j));
+   }
+  }
+  
+ Right
+public class Foo{
+ int i = 5;
+ static int k = 2;
+ public static void main(String[] args){
+   Foo foo = new Foo()
+   int j = Foo.i;
+   foo.m1();
+  }
+  public void m1(){
+    i = i+k+m2(i,k);
+   }
+  public static int m2(int i ,int j){
+    return (int)(Math.pow(i,j));
+   }
+  }
