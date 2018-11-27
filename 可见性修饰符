@@ -1,0 +1,5 @@
+public : 类，方法，数据可以被任何其他的类访问。
+没有加public： 类，方法，数据可以被同一个包中的任何一个类访问的，package-private 或者 package-access
+private 数据不能被任意修改，所以需要有专门的方法
+
+java具有值共享的功能，只有调用函数，函数的值就发生了改变，不管是形参还是实参。pass-by-sharing
