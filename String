@@ -1,0 +1,46 @@
+String s1 = new String("Welcome to Java");
+String s2 = "Welcome to java"
+String s3 = "Welcome to java"
+s1 == s2 False
+s2 == s3 True
+
+s1.equals(s2) True
+.equals() 区分大小写
+.equalsIgnoreCase()不区分大小写
+.compareTo(s1) 该字符串是否大于、小于、等于s1
+.compareToIgnoreCase(s1) 不区分大小写
+regionMatches(index:int,s1:string,s1Index:int,len:int)  如果字符串的子域精确匹配字符串S1中指定的子域，则返回True
+regionMatches(ignoreCaes:boolean,index:int,s1:string,s1Index:int,len:int)
+.startsWith()
+.endswith()
+
+s.length()
+s.charAt()
+s.concat(string)  == +
+s.substring(begin,end) #没有end 默认为最后
+
+s.toLowerCase()
+s.toUpperCase()
+s.trim() 删除字符串两端的空格字符返回一个新字符串
+replace(old char,new char)
+replaceFirst(oldstring,newstring) #返回用一个新子串替换这个字符串中第一个和它匹配的子串之后的新字符串
+replaceAll(old string,new string)
+split(delimiter:string)
+
+
+正则表达式
+s1.matches()  *  [$+#]或者   [.,:;?]满足其中一项
+
+s1.indexOf()  第一次出现的下标
+s1.indexOf(char,fromIndex)  从fromIndex后第一次出现的
+s1.indexOf(string) 
+s1.indexOf(string,fromIndex)
+s1.lastIndexOf(char)
+s1.latsIndexOf(char,fromIndex)
+s1.lastIndexof(string,/fromIndex)
+
+valueof(c)
+valueof(data:char[]  / char/ double/float/int/long/boolean)...>string
+String.valueOf(5.44)  ....>'5','.','4','4'
+
+string.format("%5.2f",45.556)   ....>"45.56"
