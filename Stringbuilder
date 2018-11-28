@@ -1,0 +1,21 @@
+StringBuilder stringBuilder = new StringBuilder();
+stringBuilder.append("Welcome");
+stringBuilder.append(" ");
+stringBuilder.append("to");
+stringBuilder.append(" ");
+stringBuilder.append("Java");
+stringBuilder.insert(11."HTML and ");  # Welcome to HTML and Java
+stringBuilder.delete(8,11)  # Welcome Java
+stringBuilder.deleteCharAt(8)  # Welcome o Java
+stringBuilder.reverse()    # avaJ 0 emocleW
+stringBuilder.replace(11,15,"HTML")  # welcome to Java
+stringBuilder.setCharAt(0,"w") # welcome to java
+
+stringBuilder.toString()
+stringBuilder.capacity()
+stringBuilder.charAt()
+stringBuilder.length()
+stringBuilder.setLength()
+stringBuilder.substring()
+stringBuilder.trimToSize()
+
